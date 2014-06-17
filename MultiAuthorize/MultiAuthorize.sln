@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiAuthorize", "MultiAuthorize\MultiAuthorize.csproj", "{AEEE2AA5-7804-4690-A038-877F5296E293}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWeb", "SampleWeb\SampleWeb.csproj", "{BE24034F-D9A4-4DD4-86DF-5956129C022A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEEE2AA5-7804-4690-A038-877F5296E293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEEE2AA5-7804-4690-A038-877F5296E293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEEE2AA5-7804-4690-A038-877F5296E293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEEE2AA5-7804-4690-A038-877F5296E293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE24034F-D9A4-4DD4-86DF-5956129C022A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE24034F-D9A4-4DD4-86DF-5956129C022A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE24034F-D9A4-4DD4-86DF-5956129C022A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE24034F-D9A4-4DD4-86DF-5956129C022A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

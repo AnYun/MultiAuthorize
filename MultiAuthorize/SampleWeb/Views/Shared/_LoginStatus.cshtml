@@ -1,0 +1,52 @@
+﻿<div class="row">
+    <div class="col-md-6">
+        @if (Request.IsAuthenticated("User"))
+        {
+            @Html.ActionLink("登出使用者", "Logout", "Account")
+        }
+        else
+        {
+            @Html.ActionLink("使用者登入", "Login", "Account")
+        }
+        <br />
+        <ul class="list-group">
+            <li class="list-group-item">使用者登入狀態：@AuthText(Request.IsAuthenticated("User"))</li>
+            <li class="list-group-item">使用者是否有 User 角色：@AuthText(Request.IsAuthenticatedRole("User", "User"))</li>
+            <li class="list-group-item">使用者是否有 Admin 角色：@AuthText(Request.IsAuthenticatedRole("User", "Admin"))</li>
+            <li class="list-group-item">使用者是否名稱為 User：@AuthText(Request.IsAuthenticatedUser("User", "User"))</li>
+            <li class="list-group-item">使用者是否名稱為 Admin：@AuthText(Request.IsAuthenticatedUser("User", "Admin"))</li>
+        </ul>
+    </div>
+
+    <div class="col-md-6">
+        @if (Request.IsAuthenticated("Admin"))
+        {
+            @Html.ActionLink("登出管理者", "Logout", new { area = "Manage", controller = "ManageAccount" })
+        }
+        else
+        {
+            @Html.ActionLink("管理者登入", "Login", new { area = "Manage", controller = "ManageAccount" })
+        }
+        <br />
+        <ul class="list-group">
+            <li class="list-group-item">管理者登入狀態：@AuthText(Request.IsAuthenticated("Admin"))</li>
+            <li class="list-group-item">管理者是否有 User 角色：@AuthText(Request.IsAuthenticatedRole("Admin", "User"))</li>
+            <li class="list-group-item">管理者是否有 Admin 角色：@AuthText(Request.IsAuthenticatedRole("Admin", "Admin"))</li>
+            <li class="list-group-item">管理者是否名稱為 User：@AuthText(Request.IsAuthenticatedUser("Admin", "User"))</li>
+            <li class="list-group-item">管理者是否名稱為 Admin：@AuthText(Request.IsAuthenticatedUser("Admin", "Admin"))</li>
+        </ul>
+    </div>
+</div>
+
+
+@helper AuthText(bool authStatus)
+{
+    if (authStatus)
+    {
+        <span class="label label-success">有權限</span>
+    }
+    else
+    {
+        <span class="label label-danger">無權限</span>
+    }
+}
