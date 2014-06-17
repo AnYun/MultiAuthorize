@@ -17,13 +17,15 @@ public class ManageHomeController : Controller
 
 有以下參數可以進行設定：
 
-- **AuthorizeName**：驗證識別用的名稱 (Default:User)
-- **AuthorizeController**：驗證失敗要轉換到的驗證 Controller (Default:Account)
-- **AuthorizeAction**：驗證失敗要轉換到的驗證 Action (Default:Login)
-- **AuthorizeArea**：驗證失敗要轉換到的驗證 Area (Default:)
-- **Roles**：要驗證的角色
-- **Users**：要驗證的使用者
-
+| 參數名               | 預設值  | 說明 |
+| ------------------- | -------  |------------- |
+| AuthorizeName       | User    | 驗證識別用的名稱 |
+| AuthorizeController | Account | 驗證失敗要轉換到的驗證 Controller |
+| AuthorizeAction     | Login   | 驗證失敗要轉換到的驗證 Action     |
+| AuthorizeArea       | Null    | 驗證失敗要轉換到的驗證 Area       |
+| Roles               | Null    | 要驗證的角色                     |
+| Users               | Null    | 要驗證的使用者                   |
+ 
 其它更多用法請參考原始碼中的 SampleWeb 範例
 
 # 其它 #
