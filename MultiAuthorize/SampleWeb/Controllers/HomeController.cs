@@ -16,5 +16,10 @@ namespace SampleWeb.Controllers
             return View();
         }
 
+        [AllowAnonymous]
+        public ActionResult About()
+        {
+            return Content("About");
+        }
     }
 }
