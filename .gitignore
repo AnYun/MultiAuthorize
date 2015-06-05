@@ -157,3 +157,4 @@ $RECYCLE.BIN/
 
 # Visual Studio Package
 /MultiAuthorize/packages
+/MultiAuthorize/.vs/
