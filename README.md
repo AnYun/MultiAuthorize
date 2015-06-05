@@ -34,4 +34,7 @@ public class ManageHomeController : Controller
 
 P.S. 因有開啟套件還原功能，請參閱 Demo 寫的「[NuGet套件還原步驟使用Visual Studio 2012 為例](http://demo.tc/Post/763)」說明來還原有用到的套件。
 
+# License #
+[Mit License](http://opensource.org/licenses/mit-license.php)
+
 **by AnYun - [http://coding.anyun.idv.tw](http://coding.anyun.idv.tw)**
